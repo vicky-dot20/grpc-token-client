@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package token;
+
+service TokenService {
+  rpc GetToken (TokenRequest) returns (TokenResponse);
+}
+
+message TokenRequest {
+  string client_id = 1;
+}
+
+message TokenResponse {
+  string token = 1;
+}

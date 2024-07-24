@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package enrichmentPackage;
+
+service EnrichmentService {
+  rpc Enrich(EnrichmentRequest) returns (EnrichmentResponse);
+}
+
+service TokenService {
+  rpc SendToken(TokenRequest) returns (TokenResponse);
+}
+
+message EnrichmentRequest {
+  string payload = 1;
+}
+
+message EnrichmentResponse {
+  string payload = 1;
+}
+
+message TokenRequest {
+  string token = 1;
+}
+
+message TokenResponse {
+  string message = 1;
+}

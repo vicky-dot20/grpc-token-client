@@ -1,0 +1,23 @@
+{
+  "name": "grpc-token-client",
+  "version": "1.0.0",
+  "main": "src/main.ts",
+  "scripts": {
+   "start": "npx ts-node src/main.ts",
+  "proto:gen": "sh scripts/proto.gen.sh token"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.11",
+    "@grpc/proto-loader": "^0.7.13",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
